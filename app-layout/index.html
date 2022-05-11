@@ -26,7 +26,7 @@
             grid-template-rows: 80px 1fr;
         }
 
-        nav,menu,section,main,aside {
+        nav,section,main,aside {
             padding-top: 24px;
         }
         nav {
@@ -39,6 +39,28 @@
             background-color: #7048e8;
             color: #fff;
             grid-column: 2 /-1;
+
+            display:flex;
+            align-items: center;
+            gap:12px;
+            padding: 0 40px;
+        }
+
+
+        button {
+            display:inline-block;
+            font-size:16px;
+            background-color: #5f3dc4;
+            border:none;
+            cursor:pointer;
+            color:#fff;
+            padding: 8px 12px;
+            font-weight: bold;
+        }
+
+        button:last-child {
+            background-color:#d6336c;
+            margin-left: auto;
         }
         section {
             background-color: #e9ecef;
@@ -50,7 +72,13 @@
 </head>
 <body>
     <nav>Nav</nav>
-    <menu>Menu</menu>
+    <menu>
+        <button>New</button>
+        <button>Reply</button>
+        <button>Forward</button>
+        <button>Mark as Read</button>
+        <button>Trash</button>
+    </menu>
     <section>Inbox</section>
     <main>Email view</main>
     <aside>Additional info</aside>
